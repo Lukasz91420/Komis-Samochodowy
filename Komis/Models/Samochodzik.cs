@@ -1,4 +1,6 @@
-﻿namespace Komis.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Komis.Models
 {
     public class Samochodzik
     {
@@ -10,6 +12,7 @@
         public int ModelID { get; set; }
 
         public Model? Model { get; set; }
+
         public int RodzajNadwoziaID { get; set; }
 
         public RodzajNadwozia? RodzajNadwozia { get; set; }
@@ -19,6 +22,7 @@
 
         public string Kolor { get; set; }
 
+        [Display(Name = "Pojemność Silnika")]
         public string PojemnośćSilnika { get; set; }
         
         public string Przebieg {  get; set; }
